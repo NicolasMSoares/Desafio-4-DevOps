@@ -74,10 +74,10 @@ jobs:
             export DOCKER_BUILDKIT=0
             export COMPOSE_DOCKER_CLI_BUILD=0
           tags:
-            nicolasmscrecer/javacrescer:latest
+            nicolasmscrescer/javacrescer:latest
               
   deploy:
-    name: Publica APP ACI
+    name: Publica APP Azure
     needs: push-image
     runs-on: ubuntu-latest
     steps:
